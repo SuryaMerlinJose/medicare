@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+
+
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'style.css' %}">
+
+
+
+
+
+    <meta charset="UTF-8">
+    <!---<title> Responsive Registration Form | CodingLab </title>--->
+
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   </head>
+<body>
+  <div class="container">
+    <div class="title">Patient Registration</div>
+    <div class="content">
+      <form action="/reg" method="post">
+
+      {% csrf_token %}
+
+
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" name="full_name" placeholder="Enter your name" required>
+          </div>
+
+
+          <div class="input-box">
+            <span class="details">Username</span>
+            <input type="text" name="user_name" placeholder="Enter your username" required>
+          </div>
+
+
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" name="email" placeholder="Enter your email" required>
+          </div>
+
+
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" name="phone_num" placeholder="Enter your number" required>
+          </div>
+
+
+
+<div class="gender-details">
+          <input type="radio" name="gender" id="dot-1">
+          <input type="radio" name="gender" id="dot-2">
+          <input type="radio" name="gender" id="dot-3">
+          <span class="gender-title">Gender</span>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Male</span>
+          </label> &nbsp &nbsp
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">Female</span>
+          </label>
+
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+          <div class="input-box">
+          <span class="details">Date of Birth</span>
+          <input type="date" name="dob" id="dob" name="dob">
+          </div>
+
+
+          <div class="input-box">
+            <span class="details">Address</span>
+            <input type="text" name="house_name" placeholder="House Name/Number" required>&nbsp
+            <input type="text" name="street" placeholder="Street" required>&nbsp
+             <input type="text" name="city" placeholder="city" required>&nbsp
+              <input type="text" name="pincode" placeholder="pincode" required>&nbsp
+          </div>
+
+
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="password" name="password1" placeholder="Enter your password" required>&nbsp
+            <input type="password" name="password2" placeholder="Confirm your password" required>
+          </div>
+
+
+
+
+        </div>
+
+
+<!--<div class="gender-details">-->
+<!--          <input type="radio" name="med" id="dot-3">-->
+<!--          <input type="radio" name="med" id="dot-4">-->
+
+<!--          <span class="gender-title">Taking any medications</span>-->
+<!--          <div class="category">-->
+<!--            <label for="dot-3">-->
+<!--            <span class="dot one"></span>-->
+<!--            <span class="gender">Yes</span>-->
+<!--          </label>-->
+<!--          <label for="dot-4">-->
+<!--            <span class="dot two"></span>-->
+<!--            <span class="gender">No</span>-->
+<!--          </label>-->
+<!--         <textarea id="med" name="med" rows="4" cols="50" placeholder="If yes list here."></textarea>-->
+<!--          </div>-->
+<!--        </div>-->
+
+<div class="gender-details">
+          <div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+  <label class="form-check-label" for="flexRadioDefault1">
+    Default radio
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+  <label class="form-check-label" for="flexRadioDefault2">
+    Default checked radio
+  </label>
+</div>
+</div>
+
+
+        <div class="button">
+          <input type="submit" value="Register" >
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
