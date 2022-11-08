@@ -98,9 +98,30 @@ form .input-box span.details{
    background: #9b59b6;
    border-color: #d9d9d9;
  }
+
+ form .dot22{
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: #d9d9d9;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+ #dot22-4:checked ~ .category label .four,
+ #dot22-5:checked ~ .category label .five,
+ #dot22-6:checked ~ .category label .six{
+   background: #9b59b6;
+   border-color: #d9d9d9;
+ }
+
  form input[type="radio"]{
    display: none;
  }
+
+ form input[type="radio1"]{
+  display: none;
+}
  form .button{
    height: 45px;
    margin: 35px 0

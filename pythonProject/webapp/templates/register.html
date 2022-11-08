@@ -1,16 +1,12 @@
 <!DOCTYPE html>
 <!-- Created By CodingLab - www.codinglabweb.com -->
 <html lang="en" dir="ltr">
-  <head>
+<head>
 
 
 {% load static %}
 
 <link rel="stylesheet" href="{% static 'style.css' %}">
-
-
-
-
 
     <meta charset="UTF-8">
     <!---<title> Responsive Registration Form | CodingLab </title>--->
@@ -18,19 +14,20 @@
     <link rel="stylesheet" href="{% static 'style.css' %}">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+     <!-- Bootstrap -->
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+          <!-- jQuery library -->
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+          <!-- Latest compiled JavaScript -->
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
    </head>
 <body>
   <div class="container">
     <div class="title">Patient Registration</div>
     <div class="content">
-      <form action="/reg" method="post">
+      <form action="" method="post">
 
       {% csrf_token %}
 
@@ -133,18 +130,21 @@
 <!--        </div>-->
 
 <div class="gender-details">
-          <div class="form-check">
-  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-  <label class="form-check-label" for="flexRadioDefault1">
-    Default radio
+  <input type="radio" name="med" id="dot22-4">
+  <input type="radio" name="med" id="dot22-5">
+  <input type="radio" name="med" id="dot22-6">
+  <span class="gender-title">Medications</span>
+  <div class="category">
+    <label for="dot22-4">
+    <span class="dot four"></span>
+    <span class="value1">Yes</span>
+  </label> &nbsp &nbsp
+  <label for="dot22-5">
+    <span class="dot five"></span>
+    <span class="value2">No</span>
   </label>
-</div>
-<div class="form-check">
-  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-  <label class="form-check-label" for="flexRadioDefault2">
-    Default checked radio
-  </label>
-</div>
+
+  </div>
 </div>
 
 
